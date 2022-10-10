@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 110vw;
+  min-height: 110vh;
+  /* background-color: blue; */
+  overflow-x: hidden;
+  display: flex;
+}
+
+.left {
+  height: 722px;
+  width: 800px;
+  /* background-color: black; */
+  background-image: url(https://colorlib.com/etc/lf/Login_v18/images/bg-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right {
+  height: 722px;
+  width: 560px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 8px;
+
+}
+
+.right .right-top h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  margin-bottom: 60px;
+  color: rgb(44, 43, 43);
+}
+
+.right-inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.right-inputs input {
+  height: 68px;
+  width: 450px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  /* margin-bottom: 15px; */
+  position: relative;
+  bottom: 35px;
+  transition: all 1s;
+}
+
+.right-inputs input:focus {
+  border: 1px solid rgb(68, 102, 150);
+  height: 78px;
+}
+.right-inputs input:focus + .right-inputs input::placeholder{
+font-size: 0px;
+}
+
+.right-inputs input::placeholder {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  /* padding-left: 20px;
+  margin-bottom: 130px; */
+  position: relative;
+  left: 30px;
+  /* bottom: 20px; */
+  color: rgb(151, 149, 149);
+}
+
+.right-after-input {
+  width: 450px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.right-after-input .right-after-input-left input {
+  height: 15px;
+  width: 25px;
+}
+
+.right-after-input .right-after-input-left span{
+  /* padding-bottom: 10px; */
+  position: relative;
+  bottom: 1px;
+  left: 3px;
+  color: rgb(167, 163, 163);
+  font-size: 17px;
+  cursor: pointer;
+}
+.right-after-input .right-after-input-right span{
+  position: relative;
+  bottom: 0px;
+  left: 3px;
+  color: rgb(167, 163, 163);
+  font-size: 17px;
+  cursor: pointer;
+
+}
+.right-last-button{
+  /* margin-bottom: 90px; */
+  position: relative;
+  bottom: 12px;
+}
+.right-last-button button{
+  height: 50px;
+  width: 450px;
+  background-color: #6675df;
+  border: none;
+  color: aliceblue;
+  font-family: 'Montserrat Alternates', sans-serif;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.right-footer p{
+  color: grey;
+  font-size: 20px;
+}
+
+.right-icons {
+  display: flex;
+  column-gap: 4px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.right-icons div{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+}
+.right-last{
+  margin-top: 50px;
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+}
+.facebook{
+  background-image: url(./images/facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.twitter{
+  background-image: url(./images/twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
